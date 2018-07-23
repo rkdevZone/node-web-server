@@ -38,6 +38,13 @@ server.get('/bad',(req,res)=>{
   })
 })
 
+server.get('/project',(req,res)=>{
+  res.render('project.hbs',{
+    title : 'My portfolio',
+    projectNames : 'Node.js',
+  })
+})
+
 server.listen(port,()=>{
   console.log(`Running on ${port}`)
 })
